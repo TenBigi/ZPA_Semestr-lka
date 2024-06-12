@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c7pg7ia8mqrga"]
+
+[ext_resource type="Script" path="res://resources/upgrades/ability_upgrade.cs" id="1_1jwnv"]
+
+[resource]
+script = ExtResource("1_1jwnv")
+name = "Sword Swing Speed"
+id = "sword_rate"
+maxQuantity = 5
+description = "Increases sword attack rate by 10%"

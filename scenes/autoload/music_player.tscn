@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b83ksgbati70x"]
+
+[ext_resource type="AudioStream" uid="uid://co81xn4ied5pk" path="res://assets/audio/music.mp3" id="1_71vlb"]
+[ext_resource type="Script" path="res://scenes/autoload/music_player.cs" id="2_4d5e6"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1_71vlb")
+volume_db = -25.0
+autoplay = true
+bus = &"music"
+script = ExtResource("2_4d5e6")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true

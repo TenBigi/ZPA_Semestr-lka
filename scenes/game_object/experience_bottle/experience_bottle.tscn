@@ -1,0 +1,30 @@
+[gd_scene load_steps=10 format=3 uid="uid://ba7ski1mjm3qb"]
+
+[ext_resource type="Texture2D" uid="uid://dntw3ixup6iel" path="res://scenes/game_object/experience_bottle/exp_bottle.png" id="1_0vclc"]
+[ext_resource type="Script" path="res://scenes/game_object/experience_bottle/experience_bottle.cs" id="1_5kqxy"]
+[ext_resource type="PackedScene" uid="uid://ho028spjqyo" path="res://scenes/component/random_stream_player_2d_component.tscn" id="2_id6dd"]
+[ext_resource type="AudioStream" uid="uid://b0otnaj3x7et2" path="res://assets/audio/impactGeneric_light_000.ogg" id="3_du3pb"]
+[ext_resource type="AudioStream" uid="uid://dyt1by7eqhhc4" path="res://assets/audio/impactGeneric_light_001.ogg" id="4_f2hxq"]
+[ext_resource type="AudioStream" uid="uid://cjytpognnxuva" path="res://assets/audio/impactGeneric_light_002.ogg" id="5_5el5s"]
+[ext_resource type="AudioStream" uid="uid://cnxeclw5f0k8e" path="res://assets/audio/impactGeneric_light_003.ogg" id="6_q8aon"]
+[ext_resource type="AudioStream" uid="uid://du5duw63ph2sk" path="res://assets/audio/impactGeneric_light_004.ogg" id="7_qemmu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_48fee"]
+radius = 14.5
+
+[node name="ExperienceBottle" type="Node2D"]
+script = ExtResource("1_5kqxy")
+
+[node name="RandomStreamPlayer2DComponent" parent="." instance=ExtResource("2_id6dd")]
+max_distance = 300.0
+audioStreams = Array[AudioStream]([ExtResource("3_du3pb"), ExtResource("4_f2hxq"), ExtResource("5_5el5s"), ExtResource("6_q8aon"), ExtResource("7_qemmu")])
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_48fee")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0vclc")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://doqfm8pcufym6"]
+
+[ext_resource type="Script" path="res://scenes/component/experience_bottle_component.cs" id="1_eyhpq"]
+[ext_resource type="PackedScene" uid="uid://ba7ski1mjm3qb" path="res://scenes/game_object/experience_bottle/experience_bottle.tscn" id="2_15v5x"]
+
+[node name="ExperienceBottleComponent" type="Node"]
+script = ExtResource("1_eyhpq")
+_bottleScene = ExtResource("2_15v5x")
