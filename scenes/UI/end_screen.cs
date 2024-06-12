@@ -19,7 +19,7 @@ public partial class end_screen : CanvasLayer
 		descriptionLabel = GetNode<Label>("MarginContainer/PanelContainer/MarginContainer/VBoxContainer/DescriptionLabel");
 		panelContainer = GetNode<PanelContainer>("MarginContainer/PanelContainer");
 		victoryStreamPlayer = GetNode<AudioStreamPlayer>("VictoryStreamPlayer");
-		victoryStreamPlayer = GetNode<AudioStreamPlayer>("DefeatStreamPlayer");
+		defeatStreamPlayer = GetNode<AudioStreamPlayer>("DefeatStreamPlayer");
 
 		panelContainer.PivotOffset = panelContainer.Size/2;
 		panelContainer.Scale = Vector2.Zero;

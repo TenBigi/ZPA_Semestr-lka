@@ -51,7 +51,6 @@ public partial class options_menu : CanvasLayer
 		if (mode != DisplayServer.WindowMode.Fullscreen)
 			DisplayServer.WindowSetMode(DisplayServer.WindowMode.Fullscreen);
 		else
-			DisplayServer.WindowSetFlag(DisplayServer.WindowFlags.Borderless, false);
 			DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
 		UpdateDisplay();
     }

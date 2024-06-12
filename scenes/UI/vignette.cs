@@ -11,11 +11,15 @@ public partial class vignette : CanvasLayer
 		gameEvents = GetNode<game_events>("/root/GameEvents");
 		animationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 
+		if (!IsInstanceValid(animationPlayer))
+			GD.PrintErr("AnimationPlayer is not valid");
+
 		gameEvents.PlayerDamaged += OnPlayerDamaged;
 	}
 
 	public void OnPlayerDamaged()
 	{
-		animationPlayer.Play("hit");
+		if (IsInstanceValid(animationPlayer))
+			animationPlayer.Play("hit");
 	}
 }
