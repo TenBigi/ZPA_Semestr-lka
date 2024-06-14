@@ -1,14 +1,21 @@
-# ZPA_Semestralka
- Hra v enginu Godot, napsana v C#.
-## Info o hre
- Hra mechanicky kopiruje popularni hru Vampire Survivors, kdy ma hrac za ukol vydrzet v arene po urcity cas navzdory do nekonecna se objevujicich nepratel.
- Ve hre jsou implementovane vsechny dulezite mechaniky, ktere vytvareji kompletni herni smycku. Struktura hry zaroven usnadnuje pridavani novych nepratel, schopnosti a vylepseni schopnosti.
- Ve hre je zaroven zcela funkcni a kompletni UI, vcetne hlavniho menu, nastaveni s funkcni hlasitosi, jak hudby, tak zvukovych efektu a pauzovaci mechanika.
- Moji snahou bylo, aby hra nejen fungovala, ale aby i dobre vypadala. Veskere assety jsou ziskane z internetu a jsou dostupne pro volne pouziti. 
- I kdyz bych rad vytvoril assety vlastni, je to casove velmi narocna zalezitost a neni hlavnim tematem teto semestrali prace.
-## Ovladani
- Postava se da ovladat jak pomoci WASD, tak sipek. Hra se pozastavuje pomoci ESC nebo P a navigace v menickach ci v nabidce vylepseni je pomoci mysi.
+# ZPA_Semestrálka
+**Hra v enginu Godot, napsaná v C#.**
+
+## Info o hře
+Hra mechanicky kopíruje populární hru *Vampire Survivors*, kdy má hráč za úkol vydržet v aréně po určitý čas navzdory nekonečně se objevujícím nepřátelům.
+
+Ve hře jsou implementované všechny důležité mechaniky, které vytvářejí kompletní herní smyčku. Struktura hry zároveň usnadňuje přidávání nových nepřátel, schopností a vylepšení schopností.
+
+Ve hře je zcela funkční a kompletní UI, včetně hlavního menu, nastavení s funkční hlasitostí jak hudby, tak zvukových efektů, a pauzovací mechanika.
+
+Mojí snahou bylo, aby hra nejen fungovala, ale aby i dobře vypadala. Veškeré assety jsou získané z internetu a mají licenci [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/). I když bych rád vytvořil assety vlastní, je to časově velmi náročná záležitost a není hlavním tématem této semestrální práce.
+
+## Ovládání
+- Postava se dá ovládat jak pomocí **WASD**, tak šipek.
+- Hra se pozastavuje pomocí **ESC** nebo **P**.
+- Navigace v menu či v nabídce vylepšení je pomocí myši.
+
 ## Jak hru zprovoznit
- V repozirati je jiz dostupny build hry, takze neni potreba nic kompilovat. Staci pouze stahnout soubory ".exe" a ".pak" v nabidce "Releases" a vlozit je do jedne slozky.
- Soubor .pak obsahje zkomprimovana herni data potrebna pro chod hry a bez nej se hra neobejde.
+V repozitáři je již dostupný build hry, takže není potřeba nic kompilovat. Stačí pouze stáhnout soubor `.zip` v nabídce "Releases" a extrahovat jej do složky.
+
  
