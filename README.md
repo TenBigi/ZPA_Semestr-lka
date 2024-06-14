@@ -1,5 +1,5 @@
 # Semestrání práce ZPA 
-**Počítáčová hra v enginu Godot, napsaná v jazyce C#.**
+**Počítačová hra v enginu Godot, napsaná v jazyce C#.**
 
 ## Info o hře
 Hra mechanicky kopíruje populární hru *Vampire Survivors*, kdy má hráč za úkol vydržet v aréně po určitý čas navzdory nekonečně se objevujícím nepřátelům.
