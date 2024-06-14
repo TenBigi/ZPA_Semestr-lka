@@ -73,11 +73,16 @@ public partial class upgrade_manager : Node
 
 	public void OnLevelUp(int currentLevel)
 	{
-			var upgradeScreenInstance = upgradeScreenScene.Instantiate() as upgrade_screen;
-			AddChild(upgradeScreenInstance);
 			ability_upgrade[] chosenUpgrades = PickUpgrades();
-			upgradeScreenInstance.SetAbilityUpgrades(chosenUpgrades);
-			upgradeScreenInstance.UpgradeSelected += OnUpgradeSelected;
+
+			if (chosenUpgrades.Length > 0)
+			{
+				var upgradeScreenInstance = upgradeScreenScene.Instantiate() as upgrade_screen;
+				AddChild(upgradeScreenInstance);
+				upgradeScreenInstance.SetAbilityUpgrades(chosenUpgrades);
+				upgradeScreenInstance.UpgradeSelected += OnUpgradeSelected;
+			}
+			
 	}
 
 	public void OnUpgradeSelected(ability_upgrade upgrade)

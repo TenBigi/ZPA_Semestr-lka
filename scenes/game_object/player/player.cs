@@ -114,10 +114,9 @@ public partial class player : CharacterBody2D
 
 	public void OnAbilityUpgradeAdded(ability_upgrade upgrade, upgrade_data currentUpgrades)
 	{
-		if(upgrade is ability)
-		{
-			ability upgradedAbility = (ability)upgrade;
-			abilities.AddChild(upgradedAbility.abilityControllerScene.Instantiate());
-		}
-	}
+        if (upgrade is ability upgradedAbility)
+        {
+            abilities.AddChild(upgradedAbility.abilityControllerScene.Instantiate());
+        }
+    }
 }

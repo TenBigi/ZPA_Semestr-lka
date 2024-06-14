@@ -144,13 +144,14 @@ libraries = {
 autoplay = "walk"
 
 [node name="HealthComponent" parent="." instance=ExtResource("1_okmhf")]
-maxHealth = 30.0
+maxHealth = 20.0
 
 [node name="VelocityComponent" parent="." instance=ExtResource("5_yvqpk")]
 maxSpeed = 60
 acceleration = 20.0
 
 [node name="ExperienceBottleComponent" parent="." node_paths=PackedStringArray("_healthComponent") instance=ExtResource("4_qfurn")]
+dropPercent = 0.7
 _healthComponent = NodePath("../HealthComponent")
 
 [node name="HitFlashComponent" parent="." node_paths=PackedStringArray("healthComponent", "sprite") instance=ExtResource("5_v8pw5")]

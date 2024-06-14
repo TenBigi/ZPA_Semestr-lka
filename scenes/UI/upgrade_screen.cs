@@ -28,11 +28,11 @@ public partial class upgrade_screen : CanvasLayer
 		}
 	}
 
-	public void OnUpgradeSelected(ability_upgrade upgrade)
+	public async void OnUpgradeSelected(ability_upgrade upgrade)
 	{
 		EmitSignal(nameof(UpgradeSelected), upgrade);
-		//animationPlayer.Play("out");
-		//await ToSignal(animationPlayer, "animation_finished");
+		animationPlayer.Play("out");
+		await ToSignal(animationPlayer, "animation_finished");
 		GetTree().Paused = false;
 		QueueFree();
 	}
