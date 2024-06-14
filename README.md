@@ -4,7 +4,7 @@
 ## Info o hře
 Hra mechanicky kopíruje populární hru *Vampire Survivors*, kdy má hráč za úkol vydržet v aréně po určitý čas navzdory nekonečně se objevujícím nepřátelům.
 
-Ve hře jsou implementované všechny důležité mechaniky, které vytvářejí kompletní herní smyčku. Struktura hry zároveň usnadňuje přidávání nových nepřátel, schopností a vylepšení schopností.
+Ve hře jsou implementované všechny důležité mechaniky, které vytvářejí kompletní herní smyčku. Struktura kódu zároveň usnadňuje přidávání nových nepřátel, schopností a vylepšení schopností.
 
 Ve hře je zcela funkční a kompletní UI, včetně hlavního menu, nastavení s funkční hlasitostí jak hudby, tak zvukových efektů, a pauzovací mechanika.
 
